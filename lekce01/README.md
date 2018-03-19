@@ -1,4 +1,4 @@
-# 1. lekce
+# Lekce 1: Úvod do HTML
 
 ## Cíl
 
@@ -41,7 +41,7 @@
     - Vytvoření adresáře, otevření adresáře v editoru
     - Vytvořit v adresáři `index.html`
 1. Základní struktura stránky
-    - V editorech Atom a VS Code stačí zadat `html` a <kbd>Tab</kbd>
+    - V editoru VSCode stačí zadat `html:5` a <kbd>Tab</kbd> (v Atom pouze `html`)
     - Stále stejný princip značek
     - Obsah stránky se píše do `<body>`
     - Odsazování vnořených značek, tabulátor
