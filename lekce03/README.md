@@ -13,7 +13,7 @@
 
 ## Osnova
 
-1. Podklady ke stažení
+1. Podklady ke stažení: [is.gd/lekce3](https://is.gd/lekce3)
 1. Box Model
     - Všechny elementy na webu jsou obdélníky
     - Box model pracuje s vlastnostmi obdélníku: nastavení rámečků, okrajů
@@ -110,7 +110,8 @@
       }
       ```
 - Domácí úkol
-    - Jak udělat odkaz mezi dvěma stránkami? V href název souboru.
+    - Jak udělat odkaz mezi dvěma stránkami? V `href` název souboru.
+
 ## Domácí úkol
 
 Naposledy budeme pracovat s vaší vizitkou.
