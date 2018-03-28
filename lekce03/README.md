@@ -1,4 +1,4 @@
-# Lekce 2: Úvod do CSS
+# Lekce 3: Box Model, DevTools a pseudotřídy
 
 ## Cíl
 
@@ -13,7 +13,7 @@
 
 ## Osnova
 
-1. Podklady ke stažení: [is.gd/lekce3](https://is.gd/lekce3)
+1. Podklady ke stažení: [is.gd/lekce3](https://is.gd/lekce3) ([repo](https://github.com/TvorimWeb-2018-Praha/lekce03))
 1. Box Model
     - Všechny elementy na webu jsou obdélníky
     - Box model pracuje s vlastnostmi obdélníku: nastavení rámečků, okrajů
