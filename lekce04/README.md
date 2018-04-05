@@ -4,7 +4,7 @@
 
 ## Osnova
 
-1. Podklady pro stažení:
+1. Podklady pro stažení: [is.gd/lekce4](https://is.gd/lekce4) ([repozitář](https://github.com/TvorimWeb-2018-Praha/lekce04))
 1. Selektor potomků: `rodic potomek {}`
     - V domácím úkolu jsme měli menu jako bodový seznam; co když mám na stránce více seznamů a nechci je mít všechny nastylované jako menu?
     - Seznamu nastavím třídu `menu` a v CSS můžu upravit styly:
@@ -88,6 +88,8 @@
 ## Domácí úkol
 
 Zpracovat CSS podle zadané předlohy s předdefinovaným HTML.
+
+Zadání: [bit.ly/webaz-projekt1](https://bit.ly/webaz-projekt1) ([repo](https://github.com/TvorimWeb-2018-Praha/projekt1-profil))
 
 - Celý obsah je obalený v `<div class="profil">` – nastavím šířku
 - Uvnitř `<div class="hlavicka">` ve které je obrázek fotky a ikony
