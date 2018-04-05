@@ -1,4 +1,4 @@
-# Lekce 3: Pozicování
+# Lekce 4: Pozicování
 
 ## Cíl
 
