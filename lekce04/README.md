@@ -2,6 +2,16 @@
 
 ## Cíl
 
+Úcastnice:
+
+- jsou seznámené s principem toku stránky a vlivem obtékání a pozicování na tok obsahu,
+- umí vytvořit obtékaný objekt pomocí vlastnosti `float`,
+- zrušit obtékání přes vlastnost `clear`,
+- umí vyrobit jednoduchý sloupcový layout s využitím `float`,
+- znají úskalí obtékání v CSS,
+- znají vlastnost `position` a její možné hodnoty,
+- chápou chování relativního pozicování vůči rodiči pro `position: absolute`.
+
 ## Osnova
 
 1. Podklady pro stažení: [is.gd/lekce4](https://is.gd/lekce4) ([repozitář](https://github.com/TvorimWeb-2018-Praha/lekce04))
