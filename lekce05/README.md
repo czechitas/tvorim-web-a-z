@@ -21,8 +21,11 @@
     - media, default `all` (`screen`, `print` apod.)
     - `min-width`, `max-widht`, `min-height`, `max-height`
     - `orientation: portrait`, `orientation: landscape`
-
+1. Rozbor a řešení předchozího domácího úkolu
 
 ## Domácí úkol
 
-?
+Projekt Boty (?)
+
+![navod](https://user-images.githubusercontent.com/809888/38683742-7ac104c4-3e6e-11e8-9e34-0e670bcb8f35.jpg)
+
