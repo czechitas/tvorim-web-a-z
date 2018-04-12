@@ -13,3 +13,4 @@ Umí samostatně vytvořit statickou webovou prezentaci složenou z více strán
 2. [Úvod do CSS](lekce02)
 3. [Box model, DevTools, pseudotřídy](lekce03)
 4. [Pozicování](lekce04)
+4. [Responsive, Media Queries](lekce05)
