@@ -15,3 +15,4 @@ Umí samostatně vytvořit statickou webovou prezentaci složenou z více strán
 4. [Pozicování](lekce04)
 4. [Responsive, Media Queries](lekce05)
 4. [Flexbox - úvod](lekce06)
+4. [Flexbox prakticky](lekce07)
