@@ -25,7 +25,7 @@
 
 ## Domácí úkol
 
-Projekt Boty (?)
+Projekt Boty (na dva týdny)
 
 ![navod](https://user-images.githubusercontent.com/809888/38683742-7ac104c4-3e6e-11e8-9e34-0e670bcb8f35.jpg)
 
