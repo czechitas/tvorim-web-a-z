@@ -10,7 +10,7 @@
 
 ## Osnova
 
-1. Stáhnout podklady pro lekci https://is.gd/lekce7
+1. Stáhnout podklady pro lekci https://is.gd/lekce8
 2. Rychlé projetí řešení [Projekt Super Appka](https://tvorimweb-2018-praha.github.io/projekt3-reseni/)
 3. Jak na rychlé hledání v dokumentaci http://devdocs.io/
 3. Opakování metod tvorby layoutu z předchozích lekcí
