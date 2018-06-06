@@ -1,0 +1,10 @@
+{
+  "private": true,
+  "version": "1.0.0",
+  "author": "Jan Vlnas",
+  "license": "CC0-1.0",
+  "scripts": {
+    "build": "npx cleaver prezentace.md",
+    "start": "npx cleaver watch prezentace.md"
+  }
+}

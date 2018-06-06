@@ -1,0 +1,12 @@
+img {
+    max-width: 100%;
+}
+
+.note {
+    background: #f7f7f7;
+    position: absolute;
+    bottom: 0;
+    max-width: 800px;
+    padding-bottom: 1em;
+    font-size: 80%;
+}

@@ -17,5 +17,8 @@ Umí samostatně vytvořit statickou webovou prezentaci složenou z více strán
 6. [Flexbox - úvod](lekce06)
 7. [Flexbox prakticky](lekce07)
 8. [Layout shrnutí a pár chuťovek k tomu](lekce08)
-9. [Github, CSS Transformace a přechody](lekce09)
+9. [GitHub, CSS Transformace a přechody](lekce09)
 10. [CSS Animace, HTML formuláře](lekce10)
+11. ...
+12. ...
+13. [Jekyll a GitHub Pages](lekce13)

@@ -1,0 +1,701 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <title>Publikujeme a blogujeme na GitHubu</title>
+  <style type="text/css">
+    body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #222;
+  font-size: 100%;
+}
+
+.slide {
+  position: absolute;
+  top: 0; bottom: 0;
+  left: 0; right: 0;
+  background-color: #f7f7f7;
+}
+
+.slide-content {
+  width: 800px;
+  height: 600px;
+  overflow: hidden;
+  margin: 80px auto 0 auto;
+  padding: 30px;
+
+  font-weight: 200;
+  font-size: 200%;
+  line-height: 1.375;
+}
+
+.controls {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
+.arrow {
+  width: 0; height: 0;
+  border: 30px solid #333;
+  float: left;
+  margin-right: 30px;
+
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.prev {
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+
+  border-left-width: 0;
+  border-right-width: 50px;
+}
+
+.next {
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+
+  border-left-width: 50px;
+  border-right-width: 0;
+}
+
+.prev:hover {
+  border-right-color: #888;
+  cursor: pointer;
+}
+
+.next:hover {
+  border-left-color: #888;
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 300%;
+  line-height: 1.2;
+  text-align: center;
+  margin: 170px 0 0;
+}
+
+h2 {
+  font-size: 100%;
+  line-height: 1.2;
+  margin: 5px 0;
+  text-align: center;
+  font-weight: 200;
+}
+
+h3 {
+  font-size: 140%;
+  line-height: 1.2;
+  border-bottom: 1px solid #aaa;
+  margin: 0;
+  padding-bottom: 15px;
+}
+
+ul {
+  padding: 20px 0 0 60px;
+  font-weight: 200;
+  line-height: 1.375;
+}
+
+.author h1 {
+  font-size: 170%;
+  font-weight: 200;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.author h3 {
+  font-weight: 100;
+  text-align: center;
+  font-size: 95%;
+  border: none;
+}
+
+a {
+  text-decoration: none;
+  color: #44a4dd;
+}
+
+a:hover {
+  color: #66b5ff;
+}
+
+pre {
+  font-size: 60%;
+  line-height: 1.3;
+}
+
+.progress {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  z-index: 1;
+}
+
+.progress-bar {
+  width: 0%;
+  height: 3px;
+  background-color: #b4b4b4;
+
+  -webkit-transition: width 0.05s ease-out;
+  -moz-transition: width 0.05s ease-out;
+  -o-transition: width 0.05s ease-out;
+  transition: width 0.05s ease-out;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 850px) {
+
+  body {
+    font-size: 70%;
+  }
+
+  .slide-content {
+    width: auto;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  h1 {
+    margin-top: 120px;
+  }
+
+  .prev, .prev:hover {
+    border-right-color: rgba(135, 135, 135, 0.5);
+  }
+
+  .next, .next:hover {
+    border-left-color: rgba(135, 135, 135, 0.5);
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 50%;
+    overflow: hidden;
+  }
+
+  .slide-content {
+    padding: 10px;
+    margin-top: 10px;
+    height: 340px;
+  }
+
+  h1 {
+    margin-top: 50px;
+  }
+
+  ul {
+    padding-left: 25px;
+  }
+}
+
+@media print {
+  * {
+    -webkit-print-color-adjust: exact;
+  }
+
+  @page {
+    size: letter;
+  }
+
+  .hidden {
+    display: inline;
+  }
+
+  html {
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+  }
+
+  body {
+    margin: 0 auto !important;
+    border: 0;
+    padding: 0;
+    float: none !important;
+    overflow: visible;
+    background: none !important;
+    font-size: 52%;
+  }
+
+  .progress, .controls {
+    display: none;
+  }
+
+  .slide {
+    position: static;
+  }
+
+  .slide-content {
+    border: 1px solid #222;
+    margin-top: 0;
+    margin-bottom: 40px;
+    height: 3.5in;
+    overflow: visible;
+  }
+
+  .slide:nth-child(even) {
+    /* 2 slides per page */
+    page-break-before: always;
+  }
+}
+
+/*
+
+github.com style (c) Vasily Polovnyov <vast@whiteants.net>
+
+*/
+
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  color: #333;
+  background: #f8f8f8;
+}
+
+.hljs-comment,
+.hljs-quote {
+  color: #998;
+  font-style: italic;
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-subst {
+  color: #333;
+  font-weight: bold;
+}
+
+.hljs-number,
+.hljs-literal,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag .hljs-attr {
+  color: #008080;
+}
+
+.hljs-string,
+.hljs-doctag {
+  color: #d14;
+}
+
+.hljs-title,
+.hljs-section,
+.hljs-selector-id {
+  color: #900;
+  font-weight: bold;
+}
+
+.hljs-subst {
+  font-weight: normal;
+}
+
+.hljs-type,
+.hljs-class .hljs-title {
+  color: #458;
+  font-weight: bold;
+}
+
+.hljs-tag,
+.hljs-name,
+.hljs-attribute {
+  color: #000080;
+  font-weight: normal;
+}
+
+.hljs-regexp,
+.hljs-link {
+  color: #009926;
+}
+
+.hljs-symbol,
+.hljs-bullet {
+  color: #990073;
+}
+
+.hljs-built_in,
+.hljs-builtin-name {
+  color: #0086b3;
+}
+
+.hljs-meta {
+  color: #999;
+  font-weight: bold;
+}
+
+.hljs-deletion {
+  background: #fdd;
+}
+
+.hljs-addition {
+  background: #dfd;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: bold;
+}
+
+img {
+    max-width: 100%;
+}
+
+.note {
+    background: #f7f7f7;
+    position: absolute;
+    bottom: 0;
+    max-width: 800px;
+    padding-bottom: 1em;
+    font-size: 80%;
+}
+
+  </style>
+</head>
+<body>
+    <div class="progress">
+    <div class="progress-bar"></div>
+  </div>
+
+  <div class="slide -" id="slide-1">
+    <section class="slide-content"><h1 id="publikujeme-a-blogujeme-na-githubu">Publikujeme a blogujeme na GitHubu</h1>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-2">
+    <section class="slide-content"><h3 id="jak-se-tvo-web">Jak se tvoří web</h3>
+<ol>
+<li>Napiš</li>
+<li>Zkontroluj</li>
+<li>Nahraj na server</li>
+<li>Opakuj</li>
+</ol>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-3">
+    <section class="slide-content"><h3 id="jen-e-">Jenže…</h3>
+<ul>
+<li>Ruční nahrávání stránek je otrava</li>
+<li>A ruční udržování více stránek ještě víc</li>
+</ul>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-4">
+    <section class="slide-content"><div style="text-align:center">
+<img src="octocat.png" style="max-height:80vh">
+</div></section>
+  </div>
+  <div class="slide hidden" id="slide-5">
+    <section class="slide-content"><h3 id="git-nen-jen-pro-program-tory">Git není jen pro programátory</h3>
+<ul>
+<li><a href="https://github.com/lorennorman/octocat-3d/blob/master/stl/octocat_head.stl">3D modely</a> (včetně <a href="https://github.com/blog/1633-3d-file-diffs">zobrazení rozdílů</a>)</li>
+<li><a href="https://github.com/colemanm/hurricanes/blob/master/fl_2004_hurricanes.geojson">mapy</a></li>
+<li><a href="https://github.com/sinker/tacofancy">recepty</a></li>
+<li><a href="https://government.github.com/community/">vládní data a dokumenty</a></li>
+<li>psaní a publikování,</li>
+<li><a href="http://readwrite.com/2013/11/08/seven-ways-to-use-github-that-arent-coding">a více…</a></li>
+</ul>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-6">
+    <section class="slide-content"><h3 id="github-pages">GitHub Pages</h3>
+<div style="text-align:center">
+<img src="gh-settings.png">
+</div></section>
+  </div>
+  <div class="slide hidden" id="slide-7">
+    <section class="slide-content"><h3 id="v-sledek">Výsledek</h3>
+<p>…výsledek naleznete na adrese <code>&lt;username/organizace&gt;.github.io/&lt;název repozitáře&gt;</code>.</p>
+<p>Například: organizace <code>TvorimWeb-2018-Praha</code>, repozitář <a href="https://github.com/TvorimWeb-2018-Praha/projekt7-sluchatka"><code>projekt7-sluchatka</code></a>.</p>
+<p>Po zapnutí Pages je výsledek na <a href="https://tvorimweb-2018-praha.github.io/projekt7-sluchatka">tvorimweb-2018-praha.github.io/projekt7-sluchatka</a>.</p>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-8">
+    <section class="slide-content"><h3 id="a-co-takhle-vlastn-blog-">A co takhle vlastní blog?</h3>
+<div style="text-align:center;padding-top:2em">
+<img src="jekyll.png" alt="">
+</div></section>
+  </div>
+  <div class="slide hidden" id="slide-9">
+    <section class="slide-content"><h3 id="statick-a-dynamick-str-nky">Statické a dynamické stránky</h3>
+<p>Jaký je rozdíl třeba mezi Jekyllem a WordPressem?</p>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-10">
+    <section class="slide-content"><h2 id="statick-str-nky">Statické stránky</h2>
+<p><img src="dia-static.png" style="max-width:100%"></p>
+<p>Soubor se stránkou (např. <code>index.html</code>) je uložený na disku serveru. Server jej rovnou pošle prohlížeči.</p>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-11">
+    <section class="slide-content"><h3 id="dynamick-str-nky">Dynamické stránky</h3>
+<p><img src="dia-dynamic.png" style="max-width:100%"></p>
+<div class="note">
+Na serveru je aplikace (např. WordPress), která vygeneruje požadovanou stránku „za běhu“ s pomocí šablony a dat uložených v databázi.
+</div></section>
+  </div>
+  <div class="slide hidden" id="slide-12">
+    <section class="slide-content"><h3 id="gener-tor-statick-ch-str-nek">Generátor statických stránek</h3>
+<p><img src="dia-gen.png" style="max-width:100%;max-height:"></p>
+<div class="note">
+U sebe na počítači mám šablony a data, s pomocí generátoru (např. Jekyll) vygeneruji statické stránky a umístím na server. Server posílá statické stránky a neví o žádnem generátoru.
+</div></section>
+  </div>
+  <div class="slide hidden" id="slide-13">
+    <section class="slide-content"><h3 id="github-pages">GitHub Pages</h3>
+<p><img src="dia-ghp.png" style="max-width:100%;max-height:"></p>
+<div class="note">
+Při „pushnutí“ změn na GitHub se automaticky vygeneruje web pomocí Jekyllu, a GitHub jej začne servírovat stejně jako statické stránky které jsme si vytvořili předtím.
+</div></section>
+  </div>
+  <div class="slide hidden" id="slide-14">
+    <section class="slide-content"><h3 id="co-jekyll-um-">Co Jekyll umí?</h3>
+<ul>
+<li>Opakované prvky na stránce (např. navigace) můžete dát do šablony,</li>
+<li>automaticky generuje přehled článků a kategorie,</li>
+<li>články umožňuje psát v Markdownu</li>
+</ul>
+<p>…a více viz <a href="http://jekyllrb.com/">jekyllrb.com</a>.</p>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-15">
+    <section class="slide-content"><h3 id="markdown-">Markdown?</h3>
+<p>…je jednoduchý značkovací jazyk který umožňuje formátovat text jednodušeji než HTML. Například:</p>
+<pre><code class="lang-markdown">Tento text je <span class="hljs-strong">**tučně**</span> a tento <span class="hljs-emphasis">_kurzivou_</span>.
+Toto je [<span class="hljs-string">odkaz na web Czechitas</span>](<span class="hljs-link">http://www.czechitas.cz/</span>).
+</code></pre>
+<p>vytvoří:</p>
+<blockquote>
+<p>Tento text je <strong>tučně</strong> a tento <em>kurzivou</em>.
+Toto je <a href="http://www.czechitas.cz/">odkaz na web Czechitas</a>.</p>
+</blockquote>
+<p><small>(Většina této prezentace je psaná v Markdownu)</small></p>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-16">
+    <section class="slide-content"><h3 id="zkusme-si-to">Zkusme si to</h3>
+<ol>
+<li>„Forkněte“ si ukázkový blog: <a href="https://is.gd/lekce13">is.gd/lekce13</a></li>
+<li>Zapněte si GitHub Pages v nastavení projektu</li>
+<li>Upravte text v souboru <code>o-mne.md</code> nebo nějaký soubor v adresáři <code>_posts</code>
+<br><small>Soubory můžete upravit i přímo na GitHubu, když kliknete na příslušný soubor a vpravo nahoře na ikonu tužky.</small></li>
+<li>Podívejte se na výsledek na <code>&lt;váš username&gt;.github.io/lekce13</code>!</li>
+</ol>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-17">
+    <section class="slide-content"><h3 id="zdroje-a-odkazy">Zdroje a odkazy</h3>
+<ul>
+<li><a href="https://try.github.io/">Try Git</a> vás provede podrobně používáním Gitu na příkazové řádce.</li>
+<li><a href="http://markdowntutorial.com/">Markdown Tutorial</a> vás provede psaním v Markdownu.</li>
+<li><a href="http://jekyllrb.com/">Jekyll</a></li>
+<li><a href="https://pages.github.com/">GitHub Pages</a></li>
+</ul>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-18">
+    <section class="slide-content"><h3 id="dal-gener-tory-statick-ch-str-nek">Další generátory statických stránek</h3>
+<ul>
+<li><a href="http://gohugo.io/">Hugo</a></li>
+<li><a href="https://middlemanapp.com/">Docusaurus</a></li>
+<li><a href="https://github.com/GitbookIO/gitbook">GitBook</a></li>
+<li><a href="https://docusaurus.io/">Docusaurus</a></li>
+</ul>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-19">
+    <section class="slide-content"><h3 id="alternativy-github-pages">Alternativy GitHub Pages</h3>
+<ul>
+<li><a href="https://about.gitlab.com/features/pages/">GitLab Pages</a></li>
+<li><a href="https://www.netlify.com/">Netlify</a></li>
+</ul>
+</section>
+  </div>
+  <div class="slide hidden author-slide" id="slide-20">
+    <section class="slide-content"><div class="author">
+  <h1 class="name">Jan Vlnas</h1>
+    <h3 class="twitter">
+      <a href="http://twitter.com/@janvlnas">@janvlnas</a>
+    </h3>
+    <h3 class="url">
+      <a href="https://jan.vlnas.cz">https://jan.vlnas.cz</a>
+    </h3>
+</div>
+</section>
+  </div>
+
+
+
+  <script type="text/javascript">
+    /**
+ * Returns the current page number of the presentation.
+ */
+function currentPosition() {
+  return parseInt(document.querySelector('.slide:not(.hidden)').id.slice(6));
+}
+
+
+/**
+ * Navigates forward n pages
+ * If n is negative, we will navigate in reverse
+ */
+function navigate(n) {
+  var position = currentPosition();
+  var numSlides = document.getElementsByClassName('slide').length;
+
+  /* Positions are 1-indexed, so we need to add and subtract 1 */
+  var nextPosition = (position - 1 + n) % numSlides + 1;
+
+  /* Normalize nextPosition in-case of a negative modulo result */
+  nextPosition = (nextPosition - 1 + numSlides) % numSlides + 1;
+
+  document.getElementById('slide-' + position).classList.add('hidden');
+  document.getElementById('slide-' + nextPosition).classList.remove('hidden');
+
+  updateProgress();
+  updateURL();
+  updateTabIndex();
+}
+
+
+/**
+ * Updates the current URL to include a hashtag of the current page number.
+ */
+function updateURL() {
+  try {
+    window.history.replaceState({} , null, '#' + currentPosition());
+  } catch (e) {
+    window.location.hash = currentPosition();
+  }
+}
+
+
+/**
+ * Sets the progress indicator.
+ */
+function updateProgress() {
+  var progressBar = document.querySelector('.progress-bar');
+
+  if (progressBar !== null) {
+    var numSlides = document.getElementsByClassName('slide').length;
+    var position = currentPosition() - 1;
+    var percent = (numSlides === 1) ? 100 : 100 * position / (numSlides - 1);
+    progressBar.style.width = percent.toString() + '%';
+  }
+}
+
+
+/**
+ * Removes tabindex property from all links on the current slide, sets
+ * tabindex = -1 for all links on other slides. Prevents slides from appearing
+ * out of control.
+ */
+function updateTabIndex() {
+  var allLinks = document.querySelectorAll('.slide a');
+  var position = currentPosition();
+  var currentPageLinks = document.getElementById('slide-' + position).querySelectorAll('a');
+  var i;
+
+  for (i = 0; i < allLinks.length; i++) {
+    allLinks[i].setAttribute('tabindex', -1);
+  }
+
+  for (i = 0; i < currentPageLinks.length; i++) {
+    currentPageLinks[i].removeAttribute('tabindex');
+  }
+}
+
+/**
+ * Determines whether or not we are currently in full screen mode
+ */
+function isFullScreen() {
+  return document.fullscreenElement ||
+         document.mozFullScreenElement ||
+         document.webkitFullscreenElement ||
+         document.msFullscreenElement;
+}
+
+/**
+ * Toggle fullScreen mode on document element.
+ * Works on chrome (>= 15), firefox (>= 9), ie (>= 11), opera(>= 12.1), safari (>= 5).
+ */
+function toggleFullScreen() {
+  /* Convenient renames */
+  var docElem = document.documentElement;
+  var doc = document;
+
+  docElem.requestFullscreen =
+      docElem.requestFullscreen ||
+      docElem.msRequestFullscreen ||
+      docElem.mozRequestFullScreen ||
+      docElem.webkitRequestFullscreen.bind(docElem, Element.ALLOW_KEYBOARD_INPUT);
+
+  doc.exitFullscreen =
+      doc.exitFullscreen ||
+      doc.msExitFullscreen ||
+      doc.mozCancelFullScreen ||
+      doc.webkitExitFullscreen;
+
+  isFullScreen() ? doc.exitFullscreen() : docElem.requestFullscreen();
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+  // Update the tabindex to prevent weird slide transitioning
+  updateTabIndex();
+
+  // If the location hash specifies a page number, go to it.
+  var page = window.location.hash.slice(1);
+  if (page) {
+    navigate(parseInt(page) - 1);
+  }
+
+  document.onkeydown = function (e) {
+    var kc = e.keyCode;
+
+    // left, down, H, J, backspace, PgUp - BACK
+    // up, right, K, L, space, PgDn - FORWARD
+    // enter - FULLSCREEN
+    if (kc === 37 || kc === 40 || kc === 8 || kc === 72 || kc === 74 || kc === 33) {
+      navigate(-1);
+    } else if (kc === 38 || kc === 39 || kc === 32 || kc === 75 || kc === 76 || kc === 34) {
+      navigate(1);
+    } else if (kc === 13) {
+      toggleFullScreen();
+    }
+  };
+
+  if (document.querySelector('.next') && document.querySelector('.prev')) {
+    document.querySelector('.next').onclick = function (e) {
+      e.preventDefault();
+      navigate(1);
+    };
+
+    document.querySelector('.prev').onclick = function (e) {
+      e.preventDefault();
+      navigate(-1);
+    };
+  }
+});
+
+
+  </script>
+</body>
+</html>
