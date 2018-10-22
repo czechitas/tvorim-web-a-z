@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Position: absolute</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+
+        <h1>Pozicování prvků: absolute</h1>
+        <p>Prvek s absolutním pozicováním je zcela vyjmut z toku dokumentu, plave zcela mimo ostatní prvky na stránce. Jeho pozice je určena vzhledem k jeho nejbližšímu pozicovanému rodiči (tj. rodiči, který má hodnotu <em>position</em> jinou než <em>static</em>).</p>
+
+        <div class="obdelnik zelena">static</div>
+
+        <div class="obdelnik zluta rodic">
+            relative
+            <div class="obdelnik fialova absolute">absolute</div>
+        </div>
+
+        <div class="obdelnik cervena">static</div>
+
+
+    </body>
+</html>
