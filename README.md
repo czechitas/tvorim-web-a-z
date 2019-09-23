@@ -9,16 +9,15 @@ Umí samostatně vytvořit statickou webovou prezentaci složenou z více strán
 
 ## Osnova
 
-1. [Úvod do HTML](lekce01)
-2. [Úvod do CSS](lekce02)
-3. [Box model, DevTools, pseudotřídy](lekce03)
-4. [Pozicování](lekce04)
-5. [Responsive, Media Queries](lekce05)
-6. [Flexbox - úvod](lekce06)
-7. [Flexbox prakticky](lekce07)
-8. [Layout shrnutí a pár chuťovek k tomu](lekce08)
-9. [GitHub, CSS Transformace a přechody](lekce09)
-10. [CSS Animace, HTML formuláře](lekce10)
-11. [Úvod do JavaScriptu](lekce11)
-12. ...
-13. [Jekyll a GitHub Pages](lekce13)
+1. [Úvod: Organizace, VSCode, GitHub](lekce01)
+2. [Box model, DevTools, pseudotřídy, float](lekce02)
+3. [Pozicování](lekce03)
+4. [Flexbox - úvod](lekce04)
+5. [Flexbox prakticky](lekce05)
+6. [Responsive, Media Queries](lekce06)
+7. [RWD, Layout shrnutí](lekce07)
+8. [CSS transformace, přechody, animace](lekce08)
+9. [HTML formuláře](lekce09)
+10. [Pokročilé selektory, pseudoelementy a pár chuťovek k tomu](lekce10) – TODO: vyndat z lekce07
+11. Vystavení stránek na web – TODO
+12. Q & A

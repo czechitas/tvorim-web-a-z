@@ -1,31 +1,31 @@
-# Lekce 5: Responsivní webdesign (RWD)
+# Lekce 7: Flexbox prakticky
 
 ## Cíl
 
 Úcastnice:
 
-- chápou rozsáhlost zobrazobacích zařízení webu a kontextů jeho použití
-- mobile first
-- flexibilní layout a obsah
-- media queries, breakpointy
-- (bonus) responsivní obrázky srcset, sizes
+- zopakují nabité znalosti flexboxu z předchozí lekce
+- vyzkouší další praktické ukázky
+- zvládají flexbox natolik, že zvládnou samostatně úkol
 
 ## Osnova
 
-1. Úvod do problematiky
-1. Přístup mobile first
-1. Příklad - fluidní layout
-1. Příklad - flexibilní obrázky
-1. Media Queries
-    - syntax, kam s pravidly
-    - media, default `all` (`screen`, `print` apod.)
-    - `min-width`, `max-widht`, `min-height`, `max-height`
-    - `orientation: portrait`, `orientation: landscape`
-1. Rozbor a řešení předchozího domácího úkolu
+1. Stáhnout podklady pro lekci https://is.gd/lekce7
+1. Otevřít vedle flexbox-cheatsheet.pdf
+1. Zmínit databázi https://caniuse.com
+1. Opakování flexbox vlastností
+    - `display: flex | inline-flex`
+    - `flex: <flex-grow> <flex-shrink> <flex-basis>`
+    - `flex-direction: row | row-reverse | column | column-reverse`
+    - `flex-wrap: nowrap | wrap | wrap-reverse`
+    - `justify-content: flex-start | flex-end | center | space-between | space-around`
+    - `align-items: stretch | flex-start | flex-end | center | baseline`
+1. Řešení příkladu 01-hlavicka (zadání z minulé hodiny)
+1. Samostatně projít [FLEXBOX FROGGY](http://flexboxfroggy.com/#cs) jako opakování znalostí, lístečky
+1. Zadání samostatného příkladu 02-kontakty. Zadání layoutu v zadani-breakpoints.png (promítnout na plátno)
+1. Zadat domácí úkol a načít strukturu HTML (pokud zbude čas)
+
 
 ## Domácí úkol
 
-Projekt Boty (na dva týdny)
-
-![navod](https://user-images.githubusercontent.com/809888/38683742-7ac104c4-3e6e-11e8-9e34-0e670bcb8f35.jpg)
-
+[Projekt Super Appka](https://github.com/TvorimWeb-2018-Praha/projekt3-superappka)
