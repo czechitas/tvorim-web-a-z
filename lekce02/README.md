@@ -12,7 +12,7 @@
 - umí omezit šířku a vycentrovat obsah stránky.
 - jsou seznámené s principem toku stránky a vlivem obtékání a pozicování na tok obsahu,
 - umí vytvořit obtékaný objekt pomocí vlastnosti `float`,
-- zrušit obtékání přes vlastnost `clear`,
+- umí zrušit obtékání přes vlastnost `clear`.
 
 ## Osnova
 
@@ -67,7 +67,7 @@
     - `margin: 2em auto`
     - Funguje pouze horizontálně
 1. Pustíme se do stažených příkladů (layout-priklady)
-1. Typy prvků: `01-display`
+1. Typy prvků: příklad `display`
     - Blokový prvek (block): zabírá na stránce celý blok, jsou pod sebou
         - I pokud mu nstavím omezenou šířku
     - Řádkový prvek (inline): zabírá jen potřebné místo, zalamuje se podle řádku
@@ -77,7 +77,7 @@
         - Užitečné pro menu
     - Typ prvků lze změnit pomocí vlastnosti `display`
         - `display: {block|inline|inline-block};`
-1. Příklad `02-inline-block`
+1. Příklad `inline-block`
     - Bodový seznam, ukázat výsledek
     - `li { display: inline-block; }`
     - Proč ne `inline`? Ve výsledném menu chci, aby byl odkaz vyšší než řádek
@@ -144,6 +144,13 @@
 1. Kromě obrázků se float používá i k pozicování obsahu
     - Pokud dva prvky obtékají stejným směrem, tak se "naskládají" vedle sebe
     - Lze použít k vytvoření vícesloupcového rozložení (například menu + obsah)
+1. Přetékání floatovaného obsahu z prvku
+    - Příklad `preteceni`
+    - Obrázek se vyjme z boxu a rámeček se přizpůsobí pouze výšce obsahu
+        - Pochopíte tenhle fór: [CSS is Awesome](https://laughingsquid.com/css-is-awesome/)
+    - Můžeme řešit vlastností `clear`
+        - Přidáme dovnitř boxu prázdný prvek `cistic` kterému nastavíme `clear: both`
+        - (Ukázkové řešení používá pseudoprvek `::after`)
 
 ## Domácí úkol
 
