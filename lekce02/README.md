@@ -1,4 +1,4 @@
-# Lekce 3: Box Model, DevTools a pseudotřídy
+# Lekce 2: Box Model, DevTools, pseudotřídy, float
 
 ## Cíl
 
@@ -10,10 +10,16 @@
 - ví, jaký je rozdíl mezi inline, block a inline-block elementy,
 - umí vytvořit horizontální menu ze seznamu včetně pseudotříd
 - umí omezit šířku a vycentrovat obsah stránky.
+- jsou seznámené s principem toku stránky a vlivem obtékání a pozicování na tok obsahu,
+- umí vytvořit obtékaný objekt pomocí vlastnosti `float`,
+- zrušit obtékání přes vlastnost `clear`,
 
 ## Osnova
 
-1. Podklady ke stažení: [is.gd/lekce3](https://is.gd/lekce3) ([repo](https://github.com/TvorimWeb-2018-Praha/lekce03))
+**Podklady ke stažení: [podklady](podklady/).**
+
+### Box Model
+
 1. Box Model
     - Všechny elementy na webu jsou obdélníky
     - Box model pracuje s vlastnostmi obdélníku: nastavení rámečků, okrajů
@@ -109,8 +115,35 @@
 
       }
       ```
-- Domácí úkol
-    - Jak udělat odkaz mezi dvěma stránkami? V `href` název souboru.
+1. Selektor potomků: `rodic potomek {}`
+    - Co když mám na stránce více seznamů a nechci je mít všechny nastylované jako menu?
+    - Seznamu nastavím třídu `menu` a v CSS můžu upravit styly:
+    ```css
+    .menu {
+    }
+    .menu li {
+    }
+    .menu a {
+    }
+    ```
+    - Selektor vybere libovolný prvek, lze kombinovat, například: `.menu li a`
+    - Většinou je dobré omezit na dva prvky a pomáhat si pomocí tříd
+
+### Float
+
+1. Obtékání obrázku: vlastnost `float`
+    - Příklad `03-float`
+    - Nastavíme obtékání: třída `vlevo` s `float: left`, nastavíme `margin` pro odsazení textu
+    - Všimněte si: obrázek je obtékaný až textem, který následuje, ne textem výše
+    - Obdobně zpracovat i třídu `vpravo`
+1. Vlastnost `clear`
+    - V příkladu je "zub" u nadpisu
+    - Vše obtéká obrázek dokud "neskončí"
+    - Pomocí vlastnosti `clear` zruším obtékání pro daný element
+    - `left` zruší `float: left`; `right` zruší `float: right`; `both` zruší obtékání z obou stran
+1. Kromě obrázků se float používá i k pozicování obsahu
+    - Pokud dva prvky obtékají stejným směrem, tak se "naskládají" vedle sebe
+    - Lze použít k vytvoření vícesloupcového rozložení (například menu + obsah)
 
 ## Domácí úkol
 

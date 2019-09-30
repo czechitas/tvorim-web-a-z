@@ -4,43 +4,13 @@
 
 Úcastnice:
 
-- jsou seznámené s principem toku stránky a vlivem obtékání a pozicování na tok obsahu,
-- umí vytvořit obtékaný objekt pomocí vlastnosti `float`,
-- zrušit obtékání přes vlastnost `clear`,
-- umí vyrobit jednoduchý sloupcový layout s využitím `float`,
 - znají úskalí obtékání v CSS,
 - znají vlastnost `position` a její možné hodnoty,
 - chápou chování relativního pozicování vůči rodiči pro `position: absolute`.
 
 ## Osnova
 
-1. Podklady pro stažení: [is.gd/lekce4](https://is.gd/lekce4) ([repozitář](https://github.com/TvorimWeb-2018-Praha/lekce04))
-1. Selektor potomků: `rodic potomek {}`
-    - V domácím úkolu jsme měli menu jako bodový seznam; co když mám na stránce více seznamů a nechci je mít všechny nastylované jako menu?
-    - Seznamu nastavím třídu `menu` a v CSS můžu upravit styly:
-    ```css
-    .menu {
-    }
-    .menu li {
-    }
-    .menu a {
-    }
-    ```
-    - Selektor vybere libovolný prvek, lze kombinovat, například: `.menu li a`
-    - Většinou je dobré omezit na dva prvky a pomáhat si pomocí tříd
-1. Obtékání obrázku: vlastnost `float`
-    - Příklad `01-float`
-    - Nastavíme obtékání: třída `vlevo` s `float: left`, nastavíme `margin` pro odsazení textu
-    - Všimněte si: obrázek je obtékaný až textem, který následuje, ne textem výše
-    - Obdobně zpracovat i třídu `vpravo`
-1. Vlastnost `clear`
-    - V příkladu je "zub" u nadpisu
-    - Vše obtéká obrázek dokud "neskončí"
-    - Pomocí vlastnosti `clear` zruším obtékání pro daný element
-    - `left` zruší `float: left`; `right` zruší `float: right`; `both` zruší obtékání z obou stran
-1. Kromě obrázků se float používá i k pozicování obsahu
-    - Pokud dva prvky obtékají stejným směrem, tak se "naskládají" vedle sebe
-    - Lze použít k vytvoření vícesloupcového rozložení (například menu + obsah)
+<!--
 1. 2-sloupcový layout
     - Příklad `02-2-sloupce`
     - Mám dva divy s třídou `sloupec`: `prvni` a `druhy`
@@ -70,6 +40,7 @@
     - Můžeme řešit vlastností `clear`
         - Přidáme dovnitř boxu prázdný prvek `cistic` kterému nastavíme `clear: both`
         - (Ukázkové řešení používá pseudoprvek `::after`)
+-->
 1. Pozicování – vlastnost `position`
     - Říkáme jak má být prvek na stránce umístěný
     - Složka `position-priklady`
