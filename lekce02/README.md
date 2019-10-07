@@ -132,7 +132,7 @@
 ### Float
 
 1. Obtékání obrázku: vlastnost `float`
-    - Příklad `03-float`
+    - Příklad `float-priklady/float`
     - Nastavíme obtékání: třída `vlevo` s `float: left`, nastavíme `margin` pro odsazení textu
     - Všimněte si: obrázek je obtékaný až textem, který následuje, ne textem výše
     - Obdobně zpracovat i třídu `vpravo`
