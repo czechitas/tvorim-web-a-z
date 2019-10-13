@@ -1,4 +1,4 @@
-# Lekce 8: Uzavření layoutu a pár chuťovek k tomu
+# Lekce 8: RWD, Uzavření layoutu
 
 ## Cíl
 

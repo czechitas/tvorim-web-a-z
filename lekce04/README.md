@@ -1,4 +1,4 @@
-# Lekce 6: Flexbox
+# Lekce 4: Úvod do flexboxu
 
 ## Cíl
 
@@ -6,8 +6,6 @@
 
 - ovládají základy flexbox layoutu
 - vědí co je to flexbox kontejner a jeho položky
-- vědí co je a znají rozdíl mezi hlavní a příčná osou
-- vědí co je a znají rozdíl mezi hlavní a příčný rozměrem
 - umějí měnit pořadí prvků
 
 ## Osnova
@@ -24,9 +22,7 @@
     - `margin` - dopočítávání odsazení z volného místa
 1. coding... Flexbox01 - položku 02 roztáhnout, hrát si s pozicemi
 1. coding... Flexbox02 - tří sloupcový layout + hlavička + patička
-1. Směr vyskládání položek
-    - `flex-direction: row | row-reverse | column | column-reverse`
-    - coding... Flexbox03 - změna směru na column
+
 1. Zalamování položek na hlavní ose
     - `flex-wrap: nowrap | wrap | wrap-reverse`
     - coding... Flexbox04 - zalomení

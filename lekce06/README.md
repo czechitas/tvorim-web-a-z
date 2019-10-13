@@ -1,4 +1,4 @@
-# Lekce 5: Responsivní webdesign (RWD)
+# Lekce 6: Responsive, Media Queries
 
 ## Cíl
 
