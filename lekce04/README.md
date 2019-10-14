@@ -33,3 +33,8 @@
 1. coding... Flexbox-05 - hlavička s menu pomocí flexboxu
 1. coding... Flexbox-06 - responsivní dlaždice s medailonky
 1. `align-self: auto | flex-start | flex-end | center | baseline | stretch`
+
+
+## Domácí úkol
+
+Boty - https://github.com/tvorimweb-2019-praha-podzim/projekt02-profil
