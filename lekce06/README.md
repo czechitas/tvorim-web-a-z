@@ -25,7 +25,7 @@
 
 ## Domácí úkol
 
-Projekt Boty (na dva týdny)
+Projekt Recepty
 
-![navod](https://user-images.githubusercontent.com/809888/38683742-7ac104c4-3e6e-11e8-9e34-0e670bcb8f35.jpg)
+![navod](https://raw.githubusercontent.com/tvorimweb-2019-praha-podzim/projekt05-recepty/master/navod.jpg)
 
