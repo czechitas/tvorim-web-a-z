@@ -4,16 +4,19 @@
 
 Úcastnice:
 
-- zopakují nabité znalosti tvorby layoutů z předchozích lekcí
-- znají pokročilé CSS selektory, rozdíly mezi nimi
-- poznají pokročilé CSS vlastnosti
+-   zopakují nabité znalosti tvorby layoutů z předchozích lekcí
+-   učí se orientovat ve vetším cizím kódu
 
 ## Osnova
 
-1. Stáhnout podklady pro lekci https://is.gd/lekce8
-2. Rychlé projetí řešení [Projekt Super Appka](https://tvorimweb-2018-praha.github.io/projekt3-reseni/)
+1. Stáhnout podklady pro lekci https://bit.ly/webaz-lekce7
+2. Rychlé projetí řešení [Projekt Recepty](https://tvorimweb-2018-praha.github.io/projekt5-reseni/)
 3. Jak na rychlé hledání v dokumentaci http://devdocs.io/
-3. Opakování metod tvorby layoutu z předchozích lekcí
+4. Vyhledat CSS funkci `calc()`
+    - použití jako `<length>, <frequency>, <angle>, <time>, <number>, <color>, <integer>`
+    - operace `+`, `-`, `*`, `/` (whitepace okolo operátorů)
+    - pořadí vykonávání pomocí dalších `( )`
+5. Opakování metod tvorby layoutu z předchozích lekcí
     - coding s `01-layout` a hraní si
     - `display: none | inline | block | inline-block`
     - `float: left | right` + `clear: left | right | both`
@@ -22,27 +25,18 @@
     - `flex: grow shrink basis`
     - `flex-direction`, `flex-wrap`, `justify-content`, `align-items`, `align-content`
     - `@media () { }`
-4. Opáčko pseudo elementů
-    - `::before`, `::after`, `content: '';`
-5. Doplnění pseudo tříd
-    - `:first-child`, `:last-child`, `:nth-child(2n+1)`
 6. Velikost obrázku na pozadí `background-size: auto | contain | cover | w <h>;`
 7. Skrytí elementu vizuálně `visibility: visible | hidden`
-7. Funkce `calc()`
-    - použití jako `<length>, <frequency>, <angle>, <time>, <number>, <color>, <integer>`
-    - operace ` + `, ` - `, `*`, `/` (whitepace okolo operátorů)
-    - pořadí vykonávání pomocí dalších `( )`
-7. CSS proměnné
+8. CSS proměnné (bonus)
     - deklarace a přirazení hodnoty `--name: value;`
     - použití `var(--name)`
     - deklarace v `:root { ... }` jako globální scope
     - dědění hodnoty jako css vlastností od rodiče
     - výchozí hodnota `var(--name, red)`
     - ukázka na `02-variables`
+
 ---
-8. (?) `transition: name | duration | timing-function | delay`
-9. (?) `transform`, translate, scale, rotate, `transform-origin`
 
 ## Domácí úkol
 
-- dodělání všech restů z minula aneb kdo ještě něco neposlal, teď je ta vhodná příležitost
+-   dodělání všech restů z minula aneb kdo ještě něco neposlal, teď je ta vhodná příležitost
