@@ -1,31 +1,30 @@
-# Lekce 10: CSS animace
+# Lekce 9: Formuláře
 
 ## Cíl
 
-Účastnice se seznámí s tvorbou animací pomocí CSS a se základními prvky HTML formulářů.
+Účastnice se seznámí se základními prvky HTML formulářů.
 
 ## Osnova
 
-1) Rekapitulace CSS Transformation & Transition
-    * Galerie
-2) Animace
-    * `animation: nazev-animace delka [pocet opakovani] [smer] [fillmode]`
-    * `animation-iteration-count` - počet opakování nebo `infinite`
-    * `animation-direction` - `normal`, `reverse`, `alternate`
-    * `animation-fill-mode` - `none`, `forwards`, `backwards`, ...
-    * `@keyframes nazev-animace`
-        *  `from { vychozi stav }`
-        *  `to { cilovy stav }`
-        *  `X% { stav v daném procentu animace }`
-3) HTML formuláře
-   * `<form>`
-   * `<input>`
-       * text, number, checkbox, radio, button, ...
-   * `<label>`
-   * `<select>` + `<option>`
-   * `<textarea>`
-   * `<fieldset>` + `<legend>`
+1) HTML formuláře
+    * `<form>`
+        * method, action
+        * zmínit enctype
+    * `<input>`
+        * type = text, email, number, checkbox, radio, submit, tel, phone, color, date, email, range (+min,max), time
+        * required
+        * disabled
+        * placeholder
+    * `<label>`
+        * `for` - mapuje na `id` atribut inputu
+    * `<button>`
+        * type = reset, submit, button
+        * snadno stylovatelné
+    * `<select>` + `<option>` + `<optgroup>`
+        * multiple + size
+        * velmi špatně se styluje
+    * `<textarea>`
+    * `<datalist>` + `<option value="val">`
+        * `<datalist id="foo">...</datalist><input list="foo">`
+    * `<fieldset>` + `<legend>`
 
-## Úkol
-
-Projekt 6, Island
