@@ -144,11 +144,11 @@ vytvoří:
 
 ### Zkusme si to
 
-1. „Forkněte“ si ukázkový blog: [is.gd/lekce13](https://is.gd/lekce13)
+1. „Forkněte“ si ukázkový blog: [tvorimweb-2019-praha-podzim/lekce11](https://github.com/tvorimweb-2019-praha-podzim/lekce11)
 2. Zapněte si GitHub Pages v nastavení projektu
 3. Upravte text v souboru `o-mne.md` nebo nějaký soubor v adresáři `_posts`
    <br><small>Soubory můžete upravit i přímo na GitHubu, když kliknete na příslušný soubor a vpravo nahoře na ikonu tužky.</small>
-4. Podívejte se na výsledek na `<váš username>.github.io/lekce13`!
+4. Podívejte se na výsledek na `<váš username>.github.io/lekce11`!
 
 --
 
