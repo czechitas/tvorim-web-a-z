@@ -1,0 +1,32 @@
+﻿Responzivní breakpointy (místa, kde se mění rozložení stránky):
+
+Mobilní verze - šířka do 500px
+==============================
+- všechno je pod sebou v jedné úzké nudli
+- v menu jsou položky pod sebou, menu samotné je nad obsahem
+- v galerii jsou všechny obrázky pod sebou
+- popisky k obrázkům jsou vždy pod obrázkem (k těm v textu i k těm v galerii)
+
+
+Tabletové verze - šířka 500px až 1000px
+=======================================
+- skoro všechno je pod sebou
+- v menu jsou položky vedle sebe, menu samotné je nad obsahem
+- v galerii jsou vždy 2 obrázky vedle sebe (obrázků je 9, zbyde ti na konci jeden prázdný obdélníček)
+- popisky k obrázkům v textu jsou uvnitř obrázku blízko k jeho pravému dolnímu rohu
+- popisky k obrázkům v galerii jsou skryté (proč si ukážeme později - animace!!!)
+
+
+Počitačová verze - šířka nad 1000px
+=======================================
+- hlavička s obrázkem na pozadí je přes celou šířku stránky
+- obsah je v bílém pruhu uprostřed stránky omezeném na šířku 960px
+- bílý obdélník s obsahem je vysunutý kousek nahoru do obrázku (věděla jsi, že margin může být i záporné číslo?)
+- v menu jsou položky pod sebou, menu je omezené na úzký proužek a je vlevo od úvodního odstavce textu (menu -> float, text -> padding-left?)
+- jednotlivé "sekce" s textem mají v počítačové verzi vždy na jedné straně odsazení pomocí paddingu - všimni si, že se to střídá a jendou je to vpravo a pak zase vlevo, aby web vypadal vizuálně zajímavě
+- v galerii jsou vždy 3 obrázky vedle sebe 
+- popisky k obrázkům v textu jsou stejné jako v tabletové verzi (uvnitř obrázku)
+- popisky k obrázkům v galerii jsou stejné jako v tabletové verzi (skryté)
+
+
+Pokud nevíš jak, neřeš zatím ty modré čárky pod nadpisy. Lze to udělat např. pomocí pseudoprvku ::after u nadpisu. Zběžně jsme si to ukazovali, ale pokud nevíš jak, tak se tím netrap.
