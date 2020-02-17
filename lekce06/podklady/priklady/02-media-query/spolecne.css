@@ -1,0 +1,51 @@
+/* nejsme vcerejsi, pouzivame moderni box model */
+html { box-sizing: border-box; }
+*, ::after, ::before { box-sizing: inherit; }
+
+
+/* spolecne */
+body {
+    font: 16px/1.5 sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #b92e81;
+}
+
+h2 {
+    font-size: 1.3em;
+}
+
+
+/* barvy */
+.czechita  { background-color: #b92e81; }
+.zelena    { background-color: #2ecc71; }
+.modra     { background-color: #3498db; }
+.fialova   { background-color: #9b59b6; }
+.zluta     { background-color: #f1c40f; }
+.oranzova  { background-color: #e67e22; }
+.cervena   { background-color: #e74c3c; }
+.seda      { background-color: #bdc3c7; }
+.tmavsi    { background-color: #95a5a6; }
+.tmava     { background-color: #34495e; }
+
+
+/* bloky */
+.obrys { outline: 1px dashed red;}
+.zvyrazneny { background-color: #ffffd0; }
+
+.blok {
+    outline: 1px dotted black;
+    padding: 20px;
+}
+
+
+/* vychozi obdelnik */
+.obdelnik {
+    display: block;
+    margin-bottom: 20px;
+    padding: 30px 30px;
+    font-size: 24px;
+    text-align: center;
+    color: #fff;
+}

@@ -1,0 +1,15 @@
+ /* ve vychozim stavu je barva zelena */
+.barva {
+    background-color: #2ecc71;
+}
+
+
+ /* pri okne sirsim nez 500px se barva zmeni na cervenou */
+
+@media (min-width: 500px) {
+
+	.barva {
+		background-color: red;
+	}
+
+}

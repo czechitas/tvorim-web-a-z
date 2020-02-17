@@ -1,0 +1,23 @@
+/* nejsme vcerejsi, pouzivame moderni box model */
+*, :after, :before { box-sizing: border-box; }
+
+/* spolecne */
+body {
+    font: 16px/1.5 sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #b92e81;
+}
+
+/* bloky */
+.obrys { outline: 1px dashed red;}
+.zluty { background-color: #ffffd0; }
+
+.blok {
+    outline: 1px dotted black;
+    padding: 20px;
+}
+
+
+/* --------------------- */

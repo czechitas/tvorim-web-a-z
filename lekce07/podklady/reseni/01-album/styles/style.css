@@ -1,0 +1,99 @@
+.menu {
+  display: flex;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.menu .navbar-brand {
+  display: flex;
+  align-items: center;
+}
+.jumbotron {
+  background: #fff url("../images/essentialiving-yvG7vDXCzDE-unsplash.jpg")
+    no-repeat center center;
+  background-size: cover;
+  text-align: center;
+  margin-bottom: 0;
+}
+.jumbotron .btn {
+  margin: 10px;
+}
+
+.pricing {
+  background: #343a40;
+}
+.pricing-content {
+  padding: 40px 0;
+}
+.pricing .card {
+  margin: 10px;
+}
+
+.album {
+  background-color: #f8f8f8;
+}
+.album-content {
+  padding: 40px 0;
+}
+
+.album .card {
+  margin: 10px;
+}
+
+.footer {
+  padding: 15px 30px;
+}
+.footer-backtotop {
+  float: right;
+}
+
+@media (min-width: 768px) {
+  .jumbotron {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .jumbotron .lead {
+    max-width: 40em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .pricing-content {
+    display: flex;
+    padding: 60px 10px;
+  }
+  .pricing .card {
+    width: calc(100% / 3);
+  }
+
+  .album-content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 60px 10px;
+  }
+  .album .card {
+    width: calc(50% - 20px);
+  }
+
+  .footer {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .jumbotron {
+    padding-top: 175px;
+    padding-bottom: 175px;
+  }
+
+  .pricing-content,
+  .album-content {
+    padding: 100px 30px;
+    max-width: 1024px;
+    margin: auto;
+  }
+
+  .album .card {
+    width: calc(33.3333% - 20px);
+  }
+}

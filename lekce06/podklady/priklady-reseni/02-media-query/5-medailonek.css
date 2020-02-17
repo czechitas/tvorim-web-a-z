@@ -1,0 +1,44 @@
+h1 {
+    text-align: center;
+    border-bottom: 1px solid #eee;
+    max-width: 500px;
+    margin: auto;
+}
+.tym {
+    max-width: 500px;
+    margin: auto;
+}
+.clenka {
+    position: relative;
+    margin-bottom: 60px;
+}
+.clenka .foto {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100px;
+}
+.clenka .jmeno,
+.clenka .popis {
+    padding-left: 120px;
+}
+
+@media (min-width: 768px) {
+
+    h1 {
+        max-width: 1000px;
+        margin-bottom: 60px;
+    }
+
+    .tym {
+        max-width: 1000px;
+    }
+
+    .clenka {
+        width: 50%;
+        float: left;
+        padding: 0 20px 20px 0;
+    }
+
+}

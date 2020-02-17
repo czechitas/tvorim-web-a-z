@@ -1,0 +1,43 @@
+
+.foto {
+    width: 100%;
+}
+
+.foto img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+@media (min-width: 400px) {
+
+    .foto {
+        width: 50%;
+        float: left;
+    }
+
+}
+
+@media (min-width: 600px) {
+
+    .foto {
+        width: 33.33333%;
+    }
+}
+
+
+@media (min-width: 800px) {
+
+    .foto {
+        width: 25%;
+    }
+}
+
+
+@media (min-width: 1000px) {
+
+    .foto {
+        width: 16.66667%;
+    }
+}
+

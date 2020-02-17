@@ -1,0 +1,22 @@
+/* nejsme vcerejsi, pouzivame moderni box model */
+*, :after, :before { box-sizing: border-box; }
+
+.ctverecek {
+    font: 30px/1 sans-serif;
+    font-weight: bold;
+    border: 1px solid black;
+}
+
+.ctverecek:nth-child(5n+1) { background-color: #2ecc71;}
+.ctverecek:nth-child(5n+2) { background-color: #f1c40f;}
+.ctverecek:nth-child(5n+3) { background-color: #3498db;}
+.ctverecek:nth-child(5n+4) { background-color: #e74c3c;}
+.ctverecek:nth-child(5n+5) { background-color: #9b59b6;}
+
+.kontejner {
+    padding: 10px;
+    border: 1px dashed red;
+    background-color: #ffffcc;
+}
+
+/* ---------------------------------------------------- */

@@ -1,0 +1,22 @@
+/* nejsme vcerejsi, pouzivame moderni box model */
+*, :after, :before { box-sizing: border-box; }
+
+body {
+	padding: 0 50px 100px 50px;
+	font-family: sans-serif;
+}
+
+h2 {
+	margin-top: 50px;
+}
+
+.obdelnik {
+	width: 300px;
+	height: 100px;
+}
+
+.posun		{ background-color: #2ecc71;}
+.rotace 	{ background-color: #e74c3c;}
+.zvetseni	{ background-color: #3498db;}
+
+/* ----------------------- */

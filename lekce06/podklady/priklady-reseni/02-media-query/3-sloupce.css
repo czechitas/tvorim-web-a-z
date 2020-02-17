@@ -1,0 +1,8 @@
+@media (min-width: 600px) {
+
+    .sloupec {
+        width: 33.33333%;
+        float: left;
+    }
+
+}

@@ -1,0 +1,21 @@
+
+.foto {
+    width: 100%;
+}
+
+.foto img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/*
+Zařiď, aby se fotogalerie měnila tak, že pro různou šířku prohlížeče je na jednom řádku jiný počet obrázků vedle sebe.
+
+okno prohlížeče:
+> 400px - 2 obrázky vedle sebe
+> 600px - 3 obrázky vedle sebe
+> 800px - 4 obrázky vedle sebe
+> 1000px - 6 obrázky vedle sebe
+
+*/

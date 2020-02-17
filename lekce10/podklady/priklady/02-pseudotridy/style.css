@@ -1,0 +1,17 @@
+/**********************************************************/
+.container {
+    width: 90%;
+    height: 200px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box {
+    width: 30%;
+    background-color: lightseagreen;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+}

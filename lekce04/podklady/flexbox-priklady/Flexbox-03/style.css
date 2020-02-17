@@ -1,0 +1,17 @@
+/* nejsme vcerejsi, pouzivame moderni box model */
+*, :after, :before { box-sizing: border-box; }
+
+body {
+	font-family: sans-serif;
+}
+
+
+.blok {
+    padding: 20px;
+}
+
+.levy { background-color:#f1c40f ;}
+.horni { background-color: #2ecc71;}
+.dolni { background-color: #e74c3c;}
+
+/* ---------------------------------------------------- */

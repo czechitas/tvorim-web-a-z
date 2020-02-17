@@ -1,0 +1,26 @@
+/* nejsme vcerejsi, pouzivame moderni box model */
+*, :after, :before { box-sizing: border-box; }
+
+body {
+	font-family: sans-serif;
+}
+
+
+.hlavicka {
+	background-color: #3498db;
+	color: white;
+}
+
+a {
+	display: block;
+	padding: 5px 15px;
+	color: white;
+	text-decoration: none;
+}
+
+a:hover {
+	background-color: white;
+	color: #3498db;
+}
+
+/* ---------------------------------------------------- */

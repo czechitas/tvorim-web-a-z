@@ -1,0 +1,18 @@
+/* nejsme vcerejsi, pouzivame moderni box model */
+*, :after, :before { box-sizing: border-box; }
+
+body {
+	font-family: sans-serif;
+}
+
+.sloupec {
+	padding: 20px;
+}
+
+.hlavicka	{ background-color: #2ecc71; }
+.hlavni		{ background-color: #f1c40f; }
+.levy		{ background-color: #3498db; }
+.pravy		{ background-color: #e74c3c; }
+.paticka	{ background-color: #9b59b6; }
+
+/* ---------------------------------------------------- */

@@ -1,0 +1,13 @@
+ /* ve vychozim stavu je barva zelena */
+.banner {
+    display: none;
+}
+
+ /* pri okne sirsim nez 500px cerveny obdelnik se objevi */
+@media (min-width: 500px) {
+
+	.banner {
+		display: block;
+	}
+
+}
