@@ -29,7 +29,7 @@
     - Všechny elementy v prohlížeči jsou obdelníky, i když jsou kulaté
 1. Vyzkoušíme si box model
     - Založíme nový projekt, HTML soubor a přidružený CSS soubor
-    - (Možné ukázat na [prezentaci Tvořím web: HTML/CSS #19](https://czechitas.github.io/tvorim-web-1/#/19))
+    - (Možné ukázat na [prezentaci úvodního Tvořím web: HTML/CSS #19](https://czechitas.github.io/tvorim-web-1/#/108))
 1. Element `<div>`
     - Nemá sémantický význam, nemá žádný styl
     - Vytvoříme `<div>` s textem a třídou `box` a textem
